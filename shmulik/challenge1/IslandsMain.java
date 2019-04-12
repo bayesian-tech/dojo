@@ -45,8 +45,11 @@ public class IslandsMain {
 
 	
 	private static void displayMatrixIslands(IslandsMain IslandsMainFound) {
-		for (int rowI = 1; rowI <= 5; rowI++) {
-			for (int columnJ = 1; columnJ <= 5; columnJ++) {
+		int maxI = 5;
+		int maxJ = 5;
+		
+		for (int rowI = 1; rowI <= maxI; rowI++) {
+			for (int columnJ = 1; columnJ <= maxJ; columnJ++) {
 				System.out.print(IslandsMainFound.islands[rowI][columnJ]);
 			}
 			System.out.println("");
@@ -55,14 +58,14 @@ public class IslandsMain {
 	
 	
 	public static void main(String[] args) {
-		IslandsMain IslandsMainFound = new IslandsMain();
+		IslandsMain islandsMainFound = new IslandsMain();
 
 		System.out.println("The island matrix display at sea:\n0 - Sea\n1 - land\n\nThe Matrix Show:");
 
-		displayMatrixIslands(IslandsMainFound);
+		displayMatrixIslands(islandsMainFound);
 
-		System.out.println("\nThe number of islands found at sea is: =  " + IslandsMainFound
-				.counterIslands(IslandsMainFound.islands, IslandsMainFound.rowI, IslandsMainFound.columnJ));
+		System.out.println("\nThe number of islands found at sea is: =  " + islandsMainFound
+				.counterIslands(islandsMainFound.islands, islandsMainFound.rowI, islandsMainFound.columnJ));
 	}
 
 }
