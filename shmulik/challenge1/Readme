@@ -1,1 +1,14 @@
 Find the number of islands
+
+The island matrix display at sea:
+0 - Sea
+1 - land
+
+The Matrix Show:
+11000
+01001
+10011
+00000
+10101
+
+The number of islands found at sea is: =  5
