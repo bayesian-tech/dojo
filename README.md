@@ -24,10 +24,16 @@ Example:
 
 ``` 
 Input : mat[][] =  {{1, 1, 0, 0, 0},
-                   {0, 1, 0, 0, 1},
-                   {1, 0, 0, 1, 1},
-                   {0, 0, 0, 0, 0},
-                   {1, 0, 1, 0, 1} 
-Output : 5
+                    {0, 1, 0, 0, 1},
+                    {1, 0, 0, 1, 1},
+                    {0, 0, 0, 0, 0},
+                    {1, 0, 1, 0, 1}}
+Output : 5 (if your islands goes with diagonals)
+Output : 6 (if your island are evaluated horizontal and vertical only)
+
+Input : mat[][] =  {{1, 0},
+                    {0, 1}} 
+Output : 1 
+
 ```
 
